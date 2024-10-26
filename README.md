@@ -18,6 +18,7 @@ https://www.w3schools.com/html/default.asp
 
 Here is an example of a simple HTML and CSS snippet used for creating a responsive web layout:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,5 +71,4 @@ Here is an example of a simple HTML and CSS snippet used for creating a responsi
 
 </body>
 </html>
-
 
