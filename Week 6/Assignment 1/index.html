@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A travel blog post about Japan and Norway by Rohit Kumar.">
-    <title>Rohit's Travel Blog - Japan and Norway</title>
+    <title>Rohit's Dream Destinations - Japan and Norway</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Header Section -->
     <header>
-        <h1><a href="#">Rohit's Travel Adventures</a></h1>
+        <a href="#" class="site-name">Rohit's Dream Destinations</a>
+        <nav class="blog-nav">
+            <ul>
+                <li><a href="#gotojapan">Japan</a></li>
+                <li><a href="#gotonorway">Norway</a></li>
+            </ul>
+        </nav>
+
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,56 +26,79 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Main Content Section -->
     <main>
         <article>
-            <header>
-                <h2>Exploring the Wonders of Japan and Norway</h2>
-                <p>Published on October 10, 2024 by Rohit Kumar</p>
-            </header>
-
-            <!-- Blog Post Content -->
+            <div>
+                <h1>Rohit's Dream Destinations - Japan and Norway</h1>
+            </div>
             <section>
-                <p>Traveling is one of my greatest passions, and two destinations have always stood out to me: Japan and Norway. These countries offer unique experiences that are vastly different but equally captivating. In this blog, I’ll take you through my favorite moments from these amazing places.</p>
-                
-                <h3>Japan: A Blend of Tradition and Modernity</h3>
-                <p>Japan is a country like no other. From the bustling streets of Tokyo to the peaceful temples in Kyoto, it has something for everyone. I was fascinated by the perfect harmony between traditional culture and cutting-edge technology. Visiting temples like Fushimi Inari Taisha was a spiritual experience, and tasting authentic Japanese cuisine was a highlight of my trip.</p>
+                <p>Traveling has always been my greatest passion, and my dream destinations are Japan and Norway. Each
+                    of these countries offers stunning landscapes, rich culture, and unforgettable experiences. Join me
+                    as I share my thoughts and experiences from these incredible places.</p>
 
-                <img src="https://www.travelandleisure.com/thmb/Ce1mfnqJ30ttgIHqOQXO4-fvS8w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-501766117-Japanese-Temples0116-d3b61014ddf34613b508927e5a56ef4e.jpg" alt="Beautiful view of a temple in Japan" width="600" height="400">
-                <!-- Image source: https://example.com/free-stock-image -->
 
-                <p>Whether you're interested in history, nature, or modern culture, Japan has it all. A ride on the Shinkansen bullet train made me appreciate how advanced the country is while still preserving its rich traditions.</p>
+                <div class="blog-post bg-gray" id="gotojapan">
+                    <img src="japan.jpg" alt="Beautiful view of a temple in Japan" width="600" height="400">
+                    <!-- image sourse is this "https://www.travelandleisure.com/thmb/Ce1mfnqJ30ttgIHqOQXO4-fvS8w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-501766117-Japanese-Temples0116-d3b61014ddf34613b508927e5a56ef4e.jpg"> -->
 
-                <h3>Norway: A Nature Lover’s Paradise</h3>
-                <p>Norway, on the other hand, is a place of breathtaking natural beauty. The fjords, with their towering cliffs and crystal-clear waters, are a sight to behold. My journey through the Norwegian landscapes felt like a dream come true, especially the serene hikes in the mountains.</p>
+                    <div class="blog-content">
+                        <h2>Japan: A Fusion of Tradition and Innovation</h2>
+                        <p>Japan is a land of contrasts, where ancient traditions meet modern innovations. From the
+                            serene temples of Kyoto to the vibrant streets of Tokyo, every corner offers a unique
+                            glimpse into the Japanese way of life. The tranquility of Fushimi Inari Taisha was one of
+                            the highlights of my journey.</p>
+                        <p>Moreover, savoring authentic sushi in Tokyo was an experience I will never forget. Japan's
+                            unique blend of tradition and technology makes it a destination that captures the heart of
+                            every traveler.</p>
+                    </div>
+                </div>
 
-                <img src="https://res.cloudinary.com/simpleview/image/upload/v1449833209/clients/norway/Naeroyfjorden-fjord-norway_c65e3277-058b-4a22-84ed-3c3d67deee7d.jpg" alt="Stunning fjords in Norway" width="600" height="400">
-                <!-- Image source: https://example.com/free-stock-image -->
+                <div class="blog-post" id="gotonorway">
+                    <img src="norway.jpg" alt="Stunning fjords in Norway" width="600" height="400">
+                    <!--image sourse is this "https://res.cloudinary.com/simpleview/image/upload/v1449833209/clients/norway/Naeroyfjorden-fjord-norway_c65e3277-058b-4a22-84ed-3c3d67deee7d.jpg"> -->
 
-                <p>One of the most memorable experiences was witnessing the Northern Lights. Standing under the dancing lights in the cold Norwegian night was nothing short of magical. Norway is the perfect destination for anyone who loves the great outdoors.</p>
+                    <div class="blog-content">
+                        <h2>Norway: A Natural Wonderland</h2>
+                        <p>Norway, with its breathtaking fjords and majestic mountains, is truly a nature lover's
+                            paradise. The stunning landscapes, especially in places like the Lofoten Islands and
+                            Geirangerfjord, take your breath away. Hiking through these serene areas is an unforgettable
+                            experience.</p>
+                        <p>One of my most cherished moments was witnessing the Northern Lights. Standing under the
+                            shimmering lights in the dark Norwegian sky felt like a magical experience. Norway truly is
+                            the perfect destination for anyone who appreciates natural beauty.</p>
+                    </div>
+                </div>
+
             </section>
-
-            <!-- Comment Form -->
-            <section>
-                <h3>Leave a Comment</h3>
+            <section class="comment-section">
+                <h3>Leave a Comment:</h3>
                 <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <div>
+                        <div>
+                            <label for="name">Name:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div>
 
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <div>
+                        <div>
+                            <label for="comment">Comment:</label>
+                        </div>
+                        <div>
+                            <textarea id="comment" name="comment" rows="4" required></textarea>
+                        </div>
+                    </div>
 
                     <button type="submit">Submit</button>
                 </form>
             </section>
         </article>
     </main>
-
-    <!-- Footer Section -->
     <footer>
-        <p>© 2024 Rohit's Travel Adventures. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>© 2024 Rohit's Dream Destinations. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

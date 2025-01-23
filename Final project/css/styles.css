@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b6cee8);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: background 3s ease;
+  }
+  
+  .title {
+    font-size: 48px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    animation: pulse 3s infinite;
+  }
+  
+  .anime-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .anime-card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    perspective: 1000px;
+    transition: transform 0.8s;
+  }
+  
+  .poster, .details {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.8s, box-shadow 0.8s;
+  }
+  
+  .poster {
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .details {
+    background: rgba(34, 34, 54, 0.95);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .anime-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .anime-card:hover .poster {
+    transform: rotateY(180deg);
+  }
+  
+  .anime-card:hover .details {
+    transform: rotateY(360deg);
+  }
+  
+  .watch-button {
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .shooting-star {
+    position: absolute;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: shooting-star 2s linear forwards;
+  }
+  
+  @keyframes shooting-star {
+    0% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(500px, -300px);
+      opacity: 0;
+    }
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 10%, transparent 100%);
+    z-index: -1;
+    animation: twinkling 10s infinite alternate;
+  }
+  
+  @keyframes twinkling {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
